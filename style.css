@@ -8,7 +8,7 @@ body {
 section {
   padding-top: 40px;
   padding-bottom: 40px;
-  background: #f7f7f7;
+  background: #f8f8f8;
   display: block;
 }
 .containe {
@@ -20,14 +20,13 @@ section {
   overflow: hidden;
   align-items: center;
   flex-direction: column;
-  background: #f7f7f7;
+  background: #f8f8f8;
   width: 100%;
   box-sizing: border-box;
   margin-left: auto;
   margin-right: auto;
 }
-.cardd {
-}
+
 input {
   display: none;
 }
@@ -37,6 +36,8 @@ label {
   flex-direction: column;
 }
 label h2 {
+  font-family: "Montserrat";
+  cursor: pointer;
   color: #4e4e4e;
   position: relative;
   text-align: center;
@@ -60,9 +61,9 @@ span {
   width: 100%;
   max-width: 100%;
   margin-bottom: 1.5rem;
-  font-size: 1,5rem;
+  font-size: 1, 5rem;
 }
-.graph{
+.graph {
   max-width: 580px;
   color: #4e4e4e;
   font-size: 0.99rem;
@@ -70,30 +71,59 @@ span {
   font-weight: 600;
   line-height: 1.5;
 }
-.paragr{
-  color: red;
-  background-color: blue;
+.paragr {
   font-size: 30px;
   font-family: open sans;
   font-weight: bold;
 }
-h3{
+h3 {
   max-width: 580px;
   color: #4e4e4e;
   font-size: 0.99rem;
   font-family: open sans;
   font-weight: 600;
   line-height: 1.5;
+}
+.btn_container{
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.btn {
+  display: inline-block;
+  justify-content: center;
+  align-items: center;
+  width: max-content;
+  background-color: gray;
+  border-radius: 2rem;
+  margin: 0px auto;
+}
+
+.btn1 {
+  cursor: pointer;
+  color: #ffffff;
+  background: #ff3333;
+  font-weight: bold;
+  border-radius: 2rem;
+  padding: 15px;
+  box-shadow: none;
+  border: none;
+  width: 210px;
 }
 .card-content {
   display: none;
   padding: 8px;
   margin-top: 8px;
   box-sizing: border-box;
-  background-color: yellow;
   animation: card-content 0.25s ease-in-out;
   overflow: hidden;
- width: 850px;
+  width: 850px;
+}
+.card-content a {
+  display: inline-block;
+  align-items: center;
+  text-align: center;
 }
 input:checked ~ .card-content {
   display: block;
@@ -109,9 +139,10 @@ input:checked ~ .card-content {
 
 a {
   text-decoration: none;
+  color: black;
 }
 .form {
-  background-color: black;
+  background-color: #c9c5ff;
   height: 300px;
   text-align: center;
   display: flex;
