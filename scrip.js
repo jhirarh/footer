@@ -1,6 +1,7 @@
 function saveExcel(event){
   event.preventDefault()
 
+
   let name = document.getElementById("name");
 
   let email = document.getElementById("email");
@@ -9,8 +10,9 @@ function saveExcel(event){
   
 
   fetch(url + new URLSearchParams({
-  name,
-  email}), {method: 'GET'})
+    name: name.value,
+    email: email.value
+  }), {method: 'GET'})
     .then(response => {
         response.json()
             .then(data => {
