@@ -7,20 +7,70 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
   <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;1,300&display=swap" rel="stylesheet">
+
 </head>
 
 <body>
-  <div class="">
+  <section>
+    <div class="containe">
+      <div class="cardd">
+        <input type="checkbox" id="card-1">
+        <label for="card-1"><h2>Ficou alguma <span>dúvida</span>?</h2></label>
+        <div class="card-content">
+          <div class="paragraph">
+            <p class="paragr">1 - O que acontece depois que eu assinar?</p>
+            <p class="graph">Fique de olho no seu e-mail! Você fará parte do time de UAUMigs e vai receber todas as informações sobre
+              a
+              produção da sua Box, além de ter acesso a conteúdos exclusivos, promoções de marcas parceiras e novidades
+              sobre o mundo da beleza.</p>
+          </div>
+          <div class="paragraph">
+            <p class="paragr">2 - Quais são os benefícios de ser uma UAUMig?</p>
+            <p class="graph">
+              Você vai receber, na sua casa, o dobro do valor da sua assinatura em produtos. Além disso, vai ter acesso
+              ao ManUAU com dicas de uso e de beleza; conteúdos exclusivos da UAUBox para você; acesso a promoções de
+              marcas parceiras e serviços.
+            </p>
+          </div>
+          <div class="paragraph">
+            <p class="paragr">3 - Quais são as formas de pagamento?</p>
+            <p class="graph">Você pode optar pelo pagamento com cartão de crédito ou cartão pré-pago, facilmente recarregável através
+              de boleto. <a href="/">Saiba mais sobre o cartão pré-pago aqui.</a>
+            </p>
+          </div>
+          <div class="paragraph">
+            <h3>
+              Se tem alguma dúvida específica, <a href="https://atendimentouaubox.movidesk.com/kb">clique aqui para falar com a gente.</a>
+            </h3>
+          </div>
+          <div class="btn_container">
+          <a href="https://uaubox.com.br/" class="btn">
+            <button class="btn1">
+              EU QUERO
+            </button>
+          </a>
+        </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="abc">
 
     <form class="form">
       <p class="paragra">Receba conteúdo exclusivo</p>
       <div class="row_form">
-        <input type="text" placeholder="Seu nome">
-        <input type="text" placeholder="Seu e-mail">
-        <button>ENVIAR</button>
+        <input id="name" class="seuNone" type="text" placeholder="Seu nome">
+        <input id="email" class="E-mail" type="text"  placeholder="Seu e-mail">
+        <button class="seuNone" type="submit"  onclick="saveExcel(event)">
+                enviar
+        </button>
       </div>
       <div class="p">
-        <p>Ao se cadastrar você está de acordo com nossa Política de privaciadade</p>
+        <p>Ao se cadastrar você está de acordo com nossa <a href="/">Política de privaciadade</a></p>
       </div>
     </form>
 
@@ -168,6 +218,7 @@
     </div>
   </footer>
 
+ <script src="./scrip.js"></script>
 </body>
 
 </html>
